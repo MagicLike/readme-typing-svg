@@ -30,7 +30,7 @@
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
-<body <?php echo (isset($_COOKIE["darkmode"]) && $_COOKIE["darkmode"] == "on") ? 'data-theme="dark"' : ""; ?>>
+<body <?= (isset($_COOKIE["darkmode"]) && $_COOKIE["darkmode"] == "on") ? 'data-theme="dark"' : ""; ?>>
     <h1>⌨️ Readme Typing SVG</h1>
 
     <!-- GitHub badges/links section -->
@@ -62,13 +62,16 @@
                         </svg>
                     </a>
                 </div>
-                <input class="param" type="text" id="font" name="font" alt="Font name" placeholder="monospace" value="monospace" pattern="^[A-Za-z0-9\- ]*$" title="Font from Google Fonts. Only letters, numbers, and spaces.">
+                <input class="param" type="text" id="font" name="font" alt="Font name" placeholder="Fira Code" value="Fira Code" pattern="^[A-Za-z0-9\- ]*$" title="Font from Google Fonts. Only letters, numbers, and spaces.">
 
                 <label for="size">Font size</label>
                 <input class="param" type="number" id="size" name="size" alt="Font size" placeholder="20" value="20">
 
                 <label for="duration">Duration (ms per line)</label>
                 <input class="param" type="number" id="duration" name="duration" alt="Print duration (ms)" placeholder="5000" value="5000">
+
+                <label for="pause">Pause (ms after line)</label>
+                <input class="param" type="number" id="pause" name="pause" alt="Pause duration (ms)" placeholder="1000" value="1000">
 
                 <label for="color">Font color</label>
                 <input class="param jscolor jscolor-active" id="color" name="color" alt="Font color" data-jscolor="{ format: 'hexa' }" value="#36BCF7">
@@ -96,37 +99,63 @@
 
                 <label for="dimensions" title="Width ✕ Height">Width ✕ Height</label>
                 <span id="dimensions">
-                    <input class="param inline" type="number" id="width" name="width" alt="Width (px)" placeholder="400" value="400">
+                    <input class="param inline" type="number" id="width" name="width" alt="Width (px)" placeholder="435" value="435">
                     <label>✕</label>
                     <input class="param inline" type="number" id="height" name="height" alt="Height (px)" placeholder="50" value="50">
                 </span>
             </form>
         </div>
 
-        <div class="output">
-            <h2>Preview</h2>
+        <div class="output top-bottom-split">
+            <div class="top">
+                <h2>Preview</h2>
 
-            <img alt="Readme Typing SVG" src="/?lines=The+five+boxing+wizards+jump+quickly" onload="this.classList.remove('loading')" onerror="this.classList.remove('loading')" />
-            <div class="loader">Loading...</div>
+                <img alt="Readme Typing SVG" src="/?lines=The+five+boxing+wizards+jump+quickly" onload="this.classList.remove('loading')" onerror="this.classList.remove('loading')" />
+                <div class="loader">Loading...</div>
 
-            <label class="show-border">
-                <input type="checkbox">
-                Show border
-            </label>
+                <label class="show-border">
+                    <input type="checkbox">
+                    Show border
+                </label>
 
-            <h2>Markdown</h2>
-            <div class="md">
-                <code></code>
+                <div>
+                    <h2>Markdown</h2>
+                    <div class="code-container md">
+                        <code></code>
+                    </div>
+
+                    <button class="copy-button btn tooltip" onclick="clipboard.copy(this);" onmouseout="tooltip.reset(this);" disabled>
+                        Copy To Clipboard
+                    </button>
+                </div>
+
+                <div>
+                    <h2>HTML</h2>
+                    <div class="code-container html">
+                        <code></code>
+                    </div>
+
+                    <button class="copy-button btn tooltip" onclick="clipboard.copy(this);" onmouseout="tooltip.reset(this);" disabled>
+                        Copy To Clipboard
+                    </button>
+                </div>
             </div>
-
-            <button class="copy-button btn tooltip" onclick="clipboard.copy(this);" onmouseout="tooltip.reset(this);" disabled>
-                Copy To Clipboard
-            </button>
+            <div class="bottom">
+                <a href="https://github.com/DenverCoder1/readme-typing-svg/blob/main/docs/faq.md" target="_blank" class="underline-hover faq">
+                    Frequently Asked Questions
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v9l-3.794-3.793-5.999 6-1.414-1.414 5.999-6L12 3h9z"></path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
 
     <a href="javascript:toggleTheme()" class="darkmode" title="toggle dark mode">
-        <i class="<?php echo (isset($_COOKIE["darkmode"]) && $_COOKIE["darkmode"] == "on") ? 'gg-sun' : "gg-moon"; ?>"></i>
+        <i class="<?= (isset($_COOKIE["darkmode"]) && $_COOKIE["darkmode"] == "on") ? 'gg-sun' : "gg-moon"; ?>"></i>
     </a>
 </body>
 

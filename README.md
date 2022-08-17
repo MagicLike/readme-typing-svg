@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?lines=Type+messages+everywhere!;Add+a+bio+to+your+profile!;Add+a+description+to+your+repo!;Make+your+readme+stand+out!&font=Fira%20Code&center=true&width=380&height=50">
+  <img src="https://readme-typing-svg.herokuapp.com/?lines=Type+messages+everywhere!;Add+a+bio+to+your+profile!;Add+a+description+to+your+repo!;Make+your+readme+stand+out!&font=Fira%20Code&center=true&width=380&height=50&duration=4000&pause=1000">
 </p>
 
 <p align="center">
@@ -44,7 +44,7 @@ Below are links to profiles where you can see Readme Typing SVGs in action!
 [![Krish](https://github.com/krishdevdb.png?size=60)](https://github.com/krishdevdb)
 [![Aditya Raute](https://github.com/adityaraute.png?size=60)](https://github.com/adityaraute)
 [![Shiva Sankeerth Reddy](https://github.com/ShivaSankeerth.png?size=60)](https://github.com/ShivaSankeerth)
-[![Tarun Kamboj](https://github.com/Tarun-Kamboj.png?size=60)](://github.com/Tarun-Kamboj)
+[![Tarun Kamboj](https://github.com/Tarun-Kamboj.png?size=60)](https://github.com/Tarun-Kamboj)
 [![T.A.Vignesh](https://github.com/tavignesh.png?size=60)](https://github.com/tavignesh)
 [![Angelo Fallaria](https://github.com/angelofallars.png?size=60)](https://github.com/angelofallars)
 [![William J. Ghelfi](https://github.com/trumbitta.png?size=60)](https://github.com/trumbitta)
@@ -64,6 +64,9 @@ Below are links to profiles where you can see Readme Typing SVGs in action!
 [![Ronny Coste](https://github.com/lertsoft.png?size=60)](https://github.com/lertsoft)
 [![Vishal Beep](https://github.com/vishal-beep136.png?size=60)](https://github.com/Vishal-beep136)
 [![Raihan Khan](https://github.com/raihankhan.png?size=60)](https://github.com/raihankhan)
+[![notauserx](https://github.com/notauserx.png?size=60)](https://github.com/notauserx)
+[![wiz64](https://github.com/wiz64.png?size=60)](https://github.com/wiz64)
+[![Aquarian Blake](https://github.com/Aquarius-blake.png?size=60)](https://github.com/Aquarius-blake)
 
 Feel free to [open a PR](https://github.com/DenverCoder1/readme-typing-svg/issues/21#issue-870549556) and add yours!
 
@@ -82,6 +85,7 @@ Feel free to [open a PR](https://github.com/DenverCoder1/readme-typing-svg/issue
 |  `vCenter`   |  `true` to center vertically or `false`(default) to align above the center  | boolean |          `true` or `false`          |
 | `multiline`  |  `true` to wrap lines or `false` to retype on one line (default: `false`)   | boolean |          `true` or `false`          |
 |  `duration`  | Duration of the printing of a single line in milliseconds (default: `5000`) | integer |         Any positive number         |
+|   `pause`    |     Duration of the pause between lines in milliseconds (default: `0`)      | integer |       Any non-negative number       |
 
 ## 📤 Deploying it on your own
 
