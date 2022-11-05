@@ -1,11 +1,10 @@
-<?php declare (strict_types = 1);
+<?php declare(strict_types=1);
 
 /**
  * Controller for choosing model and rendering SVG outputs
  */
 class RendererController
 {
-
     /**
      * @var RendererModel $model
      */
@@ -26,17 +25,14 @@ class RendererController
      *
      * @param array<string, string> $params request parameters
      */
-    public function __construct($params, $database = null)
+    public function __construct($params)
     {
         $this->params = $params;
-
-        // create new database connection if none was passed
-        $database = $database ?? new DatabaseConnection();
 
         // set up model and view
         try {
             // create renderer model
-            $this->model = new RendererModel(__DIR__ . "/../templates/main.php", $params, $database);
+            $this->model = new RendererModel(__DIR__ . "/../templates/main.php", $params);
             // create renderer view
             $this->view = new RendererView($this->model);
         } catch (Exception $error) {
@@ -52,8 +48,8 @@ class RendererController
      */
     private function redirectToDemo(): void
     {
-        header('Location: demo/');
-        exit;
+        header("Location: demo/");
+        exit();
     }
 
     /**

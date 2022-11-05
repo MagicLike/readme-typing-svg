@@ -1,4 +1,4 @@
-<!-- markdownlint-disable MD033 MD041-->
+<!-- markdownlint-disable MD033 MD041 -->
 <p align="center">
   <h3 align="center">⌨️ Readme Typing SVG</h3>
 </p>
@@ -19,11 +19,13 @@
 
 1. Copy-paste the markdown below into your GitHub profile README
 2. Replace the value after `?lines=` with your text. Separate lines of text with semicolons and use `+` or `%20` for spaces.
-3. (Optional) Adjust the width parameter (see below) to fit the full width of your text.
+3. Adjust the width parameter (see below) to fit the full width of your text.
 
 ```md
 [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=First+line+of+text;Second+line+of+text)](https://git.io/typing-svg)
 ```
+
+4. Star the repo 😄
 
 ## ⚙ Demo site
 
@@ -56,10 +58,7 @@ Below are links to profiles where you can see Readme Typing SVGs in action!
 [![Caroline Heloíse](https://github.com/Carol42.png?size=60)](https://github.com/Carol42)
 [![BenjaminMichaelis](https://github.com/BenjaminMichaelis.png?size=60)](https://github.com/BenjaminMichaelis)
 [![Thakur Ballary](https://github.com/thakurballary.png?size=60)](https://github.com/thakurballary)
-[![Ossama Mehmood](https://github.com/ossamamehmood.png?size=60)](https://github.com/ossamamehmood)
-[![Huynh Duong](https://github.com/betty2310.png?size=60)](https://github.com/betty2310)
 [![NiceSapien](https://github.com/nicesapien.png?size=60)](https://github.com/nicesapien)
-[![LMFAO-Jude](https://github.com/lmfao-jude.png?size=60)](https://github.com/lmfao-jude)
 [![Manthan Ank](https://github.com/manthanank.png?size=60)](https://github.com/manthanank)
 [![Ronny Coste](https://github.com/lertsoft.png?size=60)](https://github.com/lertsoft)
 [![Vishal Beep](https://github.com/vishal-beep136.png?size=60)](https://github.com/Vishal-beep136)
@@ -69,6 +68,14 @@ Below are links to profiles where you can see Readme Typing SVGs in action!
 [![Aquarian Blake](https://github.com/Aquarius-blake.png?size=60)](https://github.com/Aquarius-blake)
 [![D3vil0p3r](https://github.com/D3vil0p3r.png?size=60)](https://github.com/D3vil0p3r)
 [![EliusHHimel](https://github.com/EliusHHimel.png?size=60)](https://github.com/EliusHHimel)
+[![jcs090218](https://github.com/jcs090218.png?size=60)](https://github.com/jcs090218)
+[![Rishabh2804](https://github.com/Rishabh2804.png?size=60)](https://github.com/Rishabh2804)
+[![shalinibhatt](https://github.com/shalinibhatt.png?size=60)](https://github.com/shalinibhatt)
+[![Jude-Gideon](https://github.com/jude-gideon.png?size=60)](https://github.com/jude-gideon)
+[![UlisesAlexanderAM](https://github.com/UlisesAlexanderAM.png?size=60)](https://github.com/UlisesAlexanderAM)
+[![SpookyJelly](https://github.com/SpookyJelly.png?size=60)](https://github.com/SpookyJelly)
+[![yousafesaeed](https://github.com/yousafesaeed.png?size=60)](https://github.com/yousafesaeed)
+[![cfcife](https://github.com/cfcife.png?size=60)](https://github.com/cfcife)
 
 Feel free to [open a PR](https://github.com/DenverCoder1/readme-typing-svg/issues/21#issue-870549556) and add yours!
 
@@ -107,16 +114,6 @@ You can deploy the PHP files on any website server with PHP installed or as a He
 3. On the page that comes up, click **"Deploy App"** at the end of the form
 4. Once the app is deployed, click **"Manage App"** to go to the dashboard
 5. Scroll down to the **Domains** section in the settings to find the URL you will use in place of `readme-typing-svg.demolab.com`
-6. [Optional] To use Google fonts or other custom fonts, you will need to configure the database. The login credentials for the database can be found by clicking the PostgreSQL add-on and going to Settings. The following is the definition for the `fonts` table that needs to be created.
-
-```sql
-CREATE TABLE fonts (
-	"family" varchar(50) NOT NULL,
-	css varchar(1200000) NOT NULL,
-	fetch_date date NOT NULL,
-	CONSTRAINT fonts_pkey PRIMARY KEY (family)
-);
-```
 
 ## 🤗 Contributing
 
@@ -124,57 +121,7 @@ Contributions are welcome! Feel free to open an issue or submit a pull request i
 
 Make sure your request is meaningful and you have tested the app locally before submitting a pull request.
 
-### Installing requirements
-
-#### Requirements
-
--   [PHP 7](https://www.apachefriends.org/index.html)
--   [Composer](https://getcomposer.org)
-
-#### Linux
-
-```bash
-sudo apt-get install php
-sudo apt-get install php-curl
-sudo apt-get install composer
-```
-
-#### Windows
-
-Install PHP from [XAMPP](https://www.apachefriends.org/index.html) or [php.net](https://windows.php.net/download)
-
-[▶ How to install and run PHP using XAMPP (Windows)](https://www.youtube.com/watch?v=K-qXW9ymeYQ)
-
-[📥 Download Composer](https://getcomposer.org/download/)
-
-### Clone the repository
-
-```bash
-git clone https://github.com/DenverCoder1/readme-typing-svg.git
-cd readme-typing-svg
-```
-
-### Running the app locally
-
-```bash
-composer start
-```
-
-Open <http://localhost:8000/> and add parameters to run the project locally.
-
-### Running the tests
-
-Before you can run tests, PHPUnit must be installed. You can install it using Composer by running the following command.
-
-```bash
-composer install
-```
-
-Run the following command to run the PHPUnit test script which will verify that the tested functionality is still working.
-
-```bash
-composer test
-```
+Refer to [CONTRIBUTING.md](/CONTRIBUTING.md) for more details on contributing, installing requirements, and running the application.
 
 ## 🙋‍♂️ Support
 
