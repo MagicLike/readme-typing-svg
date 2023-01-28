@@ -64,6 +64,9 @@
                 </div>
                 <input class="param" type="text" id="font" name="font" alt="Font name" placeholder="Fira Code" value="Fira Code" pattern="^[A-Za-z0-9\- ]*$" title="Font from Google Fonts. Only letters, numbers, and spaces.">
 
+                <label for="weight">Font weight</label>
+                <input class="param" type="number" id="weight" name="weight" alt="Font weight" placeholder="400" value="400" min="100" max="900" step="100">
+
                 <label for="size">Font size</label>
                 <input class="param" type="number" id="size" name="size" alt="Font size" placeholder="20" value="20">
 
@@ -80,21 +83,27 @@
                 <input class="param jscolor jscolor-active" id="background" name="background" alt="Background color" data-jscolor="{ format: 'hexa' }" value="#00000000">
 
                 <label for="center">Horizontally Centered</label>
-                <select class="param" id="center" name="center" alt="Horizontally Centered" value="false">
+                <select class="param" id="center" name="center" alt="Horizontally Centered">
                     <option>false</option>
                     <option>true</option>
                 </select>
 
                 <label for="vCenter">Vertically Centered</label>
-                <select class="param" id="vCenter" name="vCenter" alt="Vertically Centered" value="false">
+                <select class="param" id="vCenter" name="vCenter" alt="Vertically Centered">
                     <option>false</option>
                     <option>true</option>
                 </select>
 
                 <label for="multiline">Multiline</label>
-                <select class="param" id="multiline" name="multiline" alt="Multiline" value="false">
+                <select class="param" id="multiline" name="multiline" alt="Multiline">
                     <option value="false">Type sentences on one line</option>
                     <option value="true">Each sentence on a new line</option>
+                </select>
+
+                <label for="repeat">Repeat</label>
+                <select class="param" id="repeat" name="repeat" alt="Repeat">
+                    <option>true</option>
+                    <option>false</option>
                 </select>
 
                 <label for="dimensions" title="Width ✕ Height">Width ✕ Height</label>
@@ -103,6 +112,8 @@
                     <label>✕</label>
                     <input class="param inline" type="number" id="height" name="height" alt="Height (px)" placeholder="50" value="50">
                 </span>
+
+                <input type="button" class="btn" value="Reset" onclick="preview.reset();">
             </form>
         </div>
 

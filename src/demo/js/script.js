@@ -2,6 +2,7 @@ let preview = {
   // default values
   defaults: {
     font: "monospace",
+    weight: "400",
     color: "36BCF7",
     background: "00000000",
     size: "20",
@@ -12,6 +13,7 @@ let preview = {
     height: "50",
     duration: "5000",
     pause: "0",
+    repeat: "true",
   },
   dummyText: [
     "The five boxing wizards jump quickly",
@@ -154,6 +156,25 @@ let preview = {
     // update and exit
     this.update();
     return false;
+  },
+  reset: function () {
+    const overrides = {
+      font: "Fira Code",
+      pause: "1000",
+      width: "435",
+    };
+    // reset all inputs
+    const inputs = document.querySelectorAll(".param");
+    inputs.forEach((input) => {
+      let value = overrides[input.name] || this.defaults[input.name];
+      if (value) {
+        if (["color", "background"].includes(input.name)) {
+          input.jscolor.fromString(value);
+        } else {
+          input.value = value;
+        }
+      }
+    });
   },
 };
 

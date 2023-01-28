@@ -43,7 +43,6 @@ Below are links to profiles where you can see Readme Typing SVGs in action!
 [![Waren Gonzaga](https://github.com/warengonzaga.png?size=60)](https://github.com/warengonzaga)
 [![Eke Victor](https://github.com/Evavic44.png?size=60)](https://github.com/Evavic44)
 [![8BitJonny](https://github.com/8BitJonny.png?size=60)](https://github.com/8BitJonny)
-[![Krish](https://github.com/krishdevdb.png?size=60)](https://github.com/krishdevdb)
 [![Aditya Raute](https://github.com/adityaraute.png?size=60)](https://github.com/adityaraute)
 [![Shiva Sankeerth Reddy](https://github.com/ShivaSankeerth.png?size=60)](https://github.com/ShivaSankeerth)
 [![Tarun Kamboj](https://github.com/Tarun-Kamboj.png?size=60)](https://github.com/Tarun-Kamboj)
@@ -52,10 +51,10 @@ Below are links to profiles where you can see Readme Typing SVGs in action!
 [![William J. Ghelfi](https://github.com/trumbitta.png?size=60)](https://github.com/trumbitta)
 [![Shivam Yadav](https://github.com/sudoshivam.png?size=60)](https://github.com/sudoshivam)
 [![Adam Ross](https://github.com/R055A.png?size=60)](https://github.com/R055A)
-[![Krishna Kumar](https://github.com/Krishnapro.png?size=60)](https://github.com/Krishnapro)
 [![Pratik Pingale](https://github.com/PROxZIMA.png?size=60)](https://github.com/PROxZIMA)
 [![Vydr'Oz](https://github.com/VydrOz.png?size=60)](https://github.com/VydrOz)
 [![Caroline Heloíse](https://github.com/Carol42.png?size=60)](https://github.com/Carol42)
+[![PriyanshK09](https://github.com/PriyanshK09.png?size=60)](https://github.com/PriyanshK09)
 [![BenjaminMichaelis](https://github.com/BenjaminMichaelis.png?size=60)](https://github.com/BenjaminMichaelis)
 [![Thakur Ballary](https://github.com/thakurballary.png?size=60)](https://github.com/thakurballary)
 [![NiceSapien](https://github.com/nicesapien.png?size=60)](https://github.com/nicesapien)
@@ -63,7 +62,6 @@ Below are links to profiles where you can see Readme Typing SVGs in action!
 [![Ronny Coste](https://github.com/lertsoft.png?size=60)](https://github.com/lertsoft)
 [![Vishal Beep](https://github.com/vishal-beep136.png?size=60)](https://github.com/Vishal-beep136)
 [![Raihan Khan](https://github.com/raihankhan.png?size=60)](https://github.com/raihankhan)
-[![notauserx](https://github.com/notauserx.png?size=60)](https://github.com/notauserx)
 [![wiz64](https://github.com/wiz64.png?size=60)](https://github.com/wiz64)
 [![Aquarian Blake](https://github.com/Aquarius-blake.png?size=60)](https://github.com/Aquarius-blake)
 [![D3vil0p3r](https://github.com/D3vil0p3r.png?size=60)](https://github.com/D3vil0p3r)
@@ -76,6 +74,13 @@ Below are links to profiles where you can see Readme Typing SVGs in action!
 [![SpookyJelly](https://github.com/SpookyJelly.png?size=60)](https://github.com/SpookyJelly)
 [![yousafesaeed](https://github.com/yousafesaeed.png?size=60)](https://github.com/yousafesaeed)
 [![cfcife](https://github.com/cfcife.png?size=60)](https://github.com/cfcife)
+[![majidtdeni666](https://github.com/majidtdeni666.png?size=60)](https://github.com/majidtdeni666)
+[![GalexY727](https://github.com/galexy727.png?size=60)](https://github.com/galexy727)
+[![HectorSaldes](https://github.com/HectorSaldes.png?size=60)](https://github.com/HectorSaldes)
+[![Ash-codes18](https://github.com/Ash-codes18.png?size=60)](https://github.com/Ash-codes18)
+[![Maagnitude](https://github.com/Maagnitude.png?size=60)](https://github.com/Maagnitude)
+[![cracker911181](https://github.com/cracker911181.png?size=60)](https://github.com/cracker911181)
+[![logann131](https://github.com/logann131.png?size=60)](https://github.com/logann131)
 
 Feel free to [open a PR](https://github.com/DenverCoder1/readme-typing-svg/issues/21#issue-870549556) and add yours!
 
@@ -95,6 +100,7 @@ Feel free to [open a PR](https://github.com/DenverCoder1/readme-typing-svg/issue
 | `multiline`  |  `true` to wrap lines or `false` to retype on one line (default: `false`)   | boolean |          `true` or `false`          |
 |  `duration`  | Duration of the printing of a single line in milliseconds (default: `5000`) | integer |         Any positive number         |
 |   `pause`    |     Duration of the pause between lines in milliseconds (default: `0`)      | integer |       Any non-negative number       |
+|   `repeat`   |  `true` to loop around to the first line after the last (default: `true`)   | boolean |          `true` or `false`          |
 
 ## 📤 Deploying it on your own
 
